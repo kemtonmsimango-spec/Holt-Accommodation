@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holt Accommodation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="header" class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.png" alt="Holt Accommodation Logo">
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link smooth-scroll">About Us</a></li>
+                    <li><a href="#team" class="nav-link smooth-scroll">Meet The Team</a></li>
+                    <li class="dropdown">
+                        <a href="#workstays" class="nav-link smooth-scroll">Workstays <svg class="chevron" viewBox="0 0 24 24" width="12" height="12"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#retreats" class="nav-link smooth-scroll">Leisure Stays <svg class="chevron" viewBox="0 0 24 24" width="12" height="12"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg></a>
+                    </li>
+                    <li><a href="#" class="nav-link">News</a></li>
+                    <li><a href="#contact" class="nav-link smooth-scroll">Contact Us</a></li>
+                </ul>
+                <a href="#enquire" class="btn btn-terracotta mobile-enquire">Enquire Now</a>
+            </nav>
+            
+            <div class="header-right">
+                <a href="#enquire" class="btn btn-terracotta desktop-enquire">Enquire Now</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg-wrapper">
+                <img src="assets/images/bgimage.png" alt="Luxury accommodation interior" class="hero-bg">
+            </div>
+            <div class="hero-overlay"></div>
+            
+            <div class="container hero-container fade-in">
+                <div class="hero-content">
+                    <h1 class="hero-title">Curated stays for<br>teams and travellers</h1>
+                    <p class="hero-desc">Tailored accommodation for workforces,<br>relocations, and luxury escapes.</p>
+                    <div class="hero-buttons">
+                        <a href="#workstays" class="btn btn-olive hero-btn">Explore Workstays</a>
+                        <a href="#retreats" class="btn btn-terracotta hero-btn">Discover Retreats</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="accommodation-showcase section-padding">
+            <div class="container fade-in">
+                <div class="accommodation-hero-grid">
+                    <div class="accommodation-copy fade-in">
+                        <span class="accommodation-kicker">TAILORED STAYS. EFFORTLESS EXPERIENCES.</span>
+                        <h2 class="accommodation-heading">Business accommodation,<br><span class="text-terracotta italic-serif">reimagined</span></h2>
+                        <hr class="accommodation-divider">
+                        <p class="accommodation-lede">From productive team stays to workforce relocations and well-earned escapes — we create spaces that feel like home, so you can focus on what matters most.</p>
+                        <div class="accommodation-actions">
+                            <a href="#workstays" class="btn btn-olive">Explore Workstays <span class="arrow-up-right">↗</span></a>
+                            <a href="#retreats" class="btn btn-white-outline glow-hover-btn outline-terracotta">Discover Retreats <span class="arrow-up-right">↗</span></a>
+                        </div>
+                    </div>
+                    
+                    <div class="accommodation-visual fade-in">
+                        <img src="assets/images/bedbg.jpg" alt="Luxury interior" class="accommodation-main-img">
+                        
+                        <div class="experience-stat-card">
+                            <div class="stat-content">
+                                <span class="stat-number">11+</span>
+                                <span class="stat-text">Years</span>
+                                <span class="stat-label">OF EXPERIENCE</span>
+                                <hr class="stat-divider">
+                                <p class="stat-desc">Trusted accommodation support for workforce stays, relocations and refined retreats.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accommodation-service-grid mt-8">
+                    
+                    <div class="accommodation-service-card card-dark fade-in">
+                        <div class="service-card-content">
+                            <div class="service-icon outline-gold">
+                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                            </div>
+                            <h3>Corporate<br>Stays</h3>
+                            <hr class="service-divider divider-gold">
+                            <p>Comfortable, well-equipped accommodation for teams working away, relocating, or needing a reliable medium-term base. Practical, consistent and easy to manage.</p>
+                            <ul class="service-checklist">
+                                <li><svg class="check-icon icon-gold" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Workforce and project stays</li>
+                                <li><svg class="check-icon icon-gold" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Medium-term relocation support</li>
+                                <li><svg class="check-icon icon-gold" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Comfort, consistency and convenience</li>
+                            </ul>
+                        </div>
+                        <div class="service-card-image">
+                            <img src="assets/images/deskchair.jpg" alt="Corporate Stays">
+                        </div>
+                    </div>
+
+                    <div class="accommodation-service-card card-light fade-in">
+                        <div class="service-card-content">
+                            <div class="service-icon solid-cream">
+                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1 .89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7v-5z"/></svg>
+                            </div>
+                            <h3>Bespoke<br>Bookings</h3>
+                            <hr class="service-divider divider-terracotta">
+                            <p>Tell us what your team needs and we’ll help shape a stay that fits. From group requirements to guest comfort, every booking is arranged with care.</p>
+                            <ul class="service-checklist">
+                                <li><svg class="check-icon icon-terracotta" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Tailored accommodation options</li>
+                                <li><svg class="check-icon icon-terracotta" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> One clear point of contact</li>
+                                <li><svg class="check-icon icon-terracotta" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Support from enquiry to check-out</li>
+                            </ul>
+                        </div>
+                        <div class="service-card-image">
+                            <img src="assets/images/bespokebook.jpg" alt="Bespoke Bookings">
+                        </div>
+                    </div>
+
+                    <div class="accommodation-service-card card-dark-alt fade-in">
+                        <div class="service-card-content">
+                            <div class="service-icon outline-gold">
+                                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2l-2.42 8H2l6.5 4.95-2.2 7.74L12 18.25l5.7 4.44-2.2-7.74L22 10h-7.58z"/></svg>
+                            </div>
+                            <h3>Luxury<br>Retreats</h3>
+                            <hr class="service-divider divider-gold">
+                            <p>Thoughtfully selected holiday properties created for comfort, style and memorable time away. Designed for families, groups and refined leisure stays.</p>
+                            <ul class="service-checklist">
+                                <li><svg class="check-icon icon-gold" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Handpicked holiday properties</li>
+                                <li><svg class="check-icon icon-gold" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Premium comfort and style</li>
+                                <li><svg class="check-icon icon-gold" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Peaceful stays for families and groups</li>
+                            </ul>
+                        </div>
+                        <div class="service-card-image">
+                            <img src="assets/images/luxury.jpg" alt="Luxury Retreats">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accommodation-value-strip fade-in mt-8">
+                    <div class="accommodation-value-item">
+                        <div class="value-icon-wrap">
+                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                        </div>
+                        <h4 class="value-heading">Seamless Booking</h4>
+                        <p class="value-desc">Simple, fast and hassle-free.</p>
+                    </div>
+                    
+                    <div class="accommodation-value-item">
+                        <div class="value-icon-wrap">
+                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 15.39l-3.76 2.27.99-4.28-3.32-2.88 4.38-.37L12 6.09l1.71 4.04 4.38.37-3.32 2.88.99 4.28zM22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24z"/></svg>
+                        </div>
+                        <h4 class="value-heading">Curated Quality</h4>
+                        <p class="value-desc">Hand-picked homes we’d stay in.</p>
+                    </div>
+
+                    <div class="accommodation-value-item">
+                        <div class="value-icon-wrap">
+                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M11.83 9L15 12.16V12a3 3 0 0 0-3-3h-.17zm-4.3.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm13.66-4.63l-1.41-1.41-2.45 2.45a7.956 7.956 0 0 0-5.33-2.05c-4.42 0-8 3.58-8 8 0 1.94.69 3.71 1.84 5.09L2.71 20.4l1.41 1.41 17.07-17.07V5.17z"/></svg>
+                        </div>
+                        <h4 class="value-heading">Relocation Support</h4>
+                        <p class="value-desc">End-to-end support for workforce moves.</p>
+                    </div>
+
+                    <div class="accommodation-value-item">
+                        <div class="value-icon-wrap">
+                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        </div>
+                        <h4 class="value-heading">Concierge Service</h4>
+                        <p class="value-desc">Here for the details, so you don’t have to.</p>
+                    </div>
+
+                    <div class="accommodation-value-item">
+                        <div class="value-icon-wrap">
+                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/></svg>
+                        </div>
+                        <h4 class="value-heading">Tailored Experiences</h4>
+                        <p class="value-desc">Thoughtful touches that make it personal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="split-features">
+            <div id="workstays" class="split-panel workstays-panel bg-forest text-white fade-in">
+                <div class="split-content-wrapper">
+                    <div class="split-media workstays-media">
+                        <img src="assets/images/pool.jpg" alt="Workstay desk setup">
+                    </div>
+                    <div class="split-copy">
+                        <div class="split-icon-badge outline-badge">
+                            <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                        </div>
+                        <h2 class="split-title">Workstays</h2>
+                        <div class="split-feature-line"></div>
+                        <p class="split-subtitle">Comfort that keeps teams productive.</p>
+                        <p class="split-desc">Practical, well located accommodation for teams and professionals. Reliable, comfortable, and designed for longer stays.</p>
+                        <a href="#" class="btn btn-white-outline glow-btn">Explore Workstays</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="retreats" class="split-panel retreats-panel text-white fade-in">
+                <div class="split-content-wrapper">
+                    <div class="split-copy">
+                        <div class="split-icon-badge outline-badge">
+                            <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2l-2.42 8H2l6.5 4.95-2.2 7.74L12 18.25l5.7 4.44-2.2-7.74L22 10h-7.58z"/></svg>
+                        </div>
+                        <h2 class="split-title">Retreats</h2>
+                        <div class="split-feature-line"></div>
+                        <p class="split-subtitle">Escapes that inspire and indulge.</p>
+                        <p class="split-desc">Handpicked luxury stays for leisure travellers, executive getaways, and group retreats. Rest, reconnect, and recharge.</p>
+                        <a href="#" class="btn btn-terracotta glow-btn">Discover Retreats</a>
+                    </div>
+                    <div class="split-media retreats-media">
+                        <img src="assets/images/oldfact.jpg" alt="Luxury retreat view">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="curated-stays section-padding bg-cream">
+            <div class="container fade-in">
+                <div class="text-center mb-8">
+                    <span class="label text-terracotta">Curated Stays</span>
+                    <h2 class="section-title text-dark">Handpicked. Thoughtfully chosen.</h2>
+                </div>
+                
+                <div class="property-grid">
+                    <div class="property-card fade-in">
+                        <div class="property-img-wrapper">
+                            <img src="assets/images/GCG-15.jpg" alt="The Old Rectory" class="property-img">
+                            <span class="property-pill pill-olive">Workstays</span>
+                        </div>
+                        <div class="property-info">
+                            <h3 class="property-title">The Old Rectory</h3>
+                            <p class="property-loc">Dorset, England</p>
+                            <p class="property-desc">Elegant country living with modern comforts, ideal for team stays.</p>
+                            <a href="#" class="property-link glow-hover-text">View Property <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+                        </div>
+                    </div>
+
+                    <div class="property-card fade-in">
+                        <div class="property-img-wrapper">
+                            <img src="assets/images/barbodos.png" alt="Marazion Cove" class="property-img">
+                            <span class="property-pill pill-terracotta">Retreats</span>
+                        </div>
+                        <div class="property-info">
+                            <h3 class="property-title">Marazion Cove</h3>
+                            <p class="property-loc">Cornwall, England</p>
+                            <p class="property-desc">Coastal luxury with breathtaking views and serene surroundings.</p>
+                            <a href="#" class="property-link glow-hover-text">View Property <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+                        </div>
+                    </div>
+
+                    <div class="property-card fade-in">
+                        <div class="property-img-wrapper">
+                            <img src="assets/images/angel.png" alt="Anglerose Villa" class="property-img">
+                            <span class="property-pill pill-terracotta">Retreats</span>
+                        </div>
+                        <div class="property-info">
+                            <h3 class="property-title">Anglerose Villa</h3>
+                            <p class="property-loc">Barbados</p>
+                            <p class="property-desc">Sun soaked escapes and refined island living for your group.</p>
+                            <a href="#" class="property-link glow-hover-text">View Property <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8 fade-in">
+                    <a href="#" class="btn btn-olive glow-hover-btn property-shake-btn">View All Properties</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials section-padding bg-cream text-dark">
+            <div class="container fade-in">
+                <div class="testi-header text-center mb-8">
+                    <span class="label text-terracotta">Guests & Clients</span>
+                    <h2 class="section-title">Trusted by teams<br>and travellers alike.</h2>
+                    <div class="rating justify-center">
+                        <span class="stars text-gold">★★★★★</span>
+                        <span class="rating-text">4.9 / 5 from 56 reviews across Airbnb and guest feedback.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marquee-wrapper fade-in">
+                <div class="marquee-track">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">SM</div>
+                            <div class="review-meta">
+                                <strong>Sarah M.</strong>
+                                <span>Corporate stay guest</span>
+                            </div>
+                            <span class="review-source-badge airbnb-badge" aria-label="Airbnb review">
+                                <svg viewBox="0 0 448 512" width="16" height="16"><path fill="#FF5A5F" d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18-22.55-88 112.61-88 90.06 0-5.45 24.25-20.29 52-45.06 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47 10.37-13.27 19.55-26.6 27.53-39.73C338 316.53 381 258 381 200 381 106.4 316.32 32 224 32S67 106.4 67 200c0 58 43 116.53 110.66 156.12 8 13.13 17.16 26.46 27.53 39.73-35.63 39.59-77.24 68.78-119.3 50.47-41.1-17.88-65.89-63.1-65.89-130.34C20 186.29 104.91 0 224 0s204 186.29 204 315.98c0 67.24-24.79 112.46-65.85 130.37zM355.08 464c-35.67-15.54-72.33-47.5-106.56-90.15C232.85 393.38 228.66 395 224 395c-4.66 0-8.85-1.62-14.52-21.15-34.23 42.65-70.89 74.61-106.56 90.15-40.35 17.58-86.08 6.55-102.92-32.18-16.84-38.74-2.12-88.75 38.23-106.33C81.33 306.9 110 263.38 110 200c0-62.9 51.1-114 114-114s114 51.1 114 114c0 63.38 28.67 106.9 71.77 125.49 40.35 17.58 55.07 67.59 38.23 106.33-16.84 38.73-62.57 49.76-102.92 32.18z"/></svg>
+                            </span>
+                        </div>
+                        <div class="review-stars text-gold">★★★★★</div>
+                        <p class="review-text">“The accommodation was spotless, comfortable, and perfectly arranged for our team. Everything felt effortless.”</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">JR</div>
+                            <div class="review-meta">
+                                <strong>James R.</strong>
+                                <span>Workforce relocation</span>
+                            </div>
+                            <span class="review-source-badge airbnb-badge" aria-label="Airbnb review">
+                                <svg viewBox="0 0 448 512" width="16" height="16"><path fill="#FF5A5F" d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18-22.55-88 112.61-88 90.06 0-5.45 24.25-20.29 52-45.06 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47 10.37-13.27 19.55-26.6 27.53-39.73C338 316.53 381 258 381 200 381 106.4 316.32 32 224 32S67 106.4 67 200c0 58 43 116.53 110.66 156.12 8 13.13 17.16 26.46 27.53 39.73-35.63 39.59-77.24 68.78-119.3 50.47-41.1-17.88-65.89-63.1-65.89-130.34C20 186.29 104.91 0 224 0s204 186.29 204 315.98c0 67.24-24.79 112.46-65.85 130.37zM355.08 464c-35.67-15.54-72.33-47.5-106.56-90.15C232.85 393.38 228.66 395 224 395c-4.66 0-8.85-1.62-14.52-21.15-34.23 42.65-70.89 74.61-106.56 90.15-40.35 17.58-86.08 6.55-102.92-32.18-16.84-38.74-2.12-88.75 38.23-106.33C81.33 306.9 110 263.38 110 200c0-62.9 51.1-114 114-114s114 51.1 114 114c0 63.38 28.67 106.9 71.77 125.49 40.35 17.58 55.07 67.59 38.23 106.33-16.84 38.73-62.57 49.76-102.92 32.18z"/></svg>
+                            </span>
+                        </div>
+                        <div class="review-stars text-gold">★★★★★</div>
+                        <p class="review-text">“Reliable, professional, and easy to work with. Holt Accommodation made our project stay simple from start to finish.”</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">EL</div>
+                            <div class="review-meta">
+                                <strong>Emma L.</strong>
+                                <span>Luxury retreat guest</span>
+                            </div>
+                            <span class="review-source-badge airbnb-badge" aria-label="Airbnb review">
+                                <svg viewBox="0 0 448 512" width="16" height="16"><path fill="#FF5A5F" d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18-22.55-88 112.61-88 90.06 0-5.45 24.25-20.29 52-45.06 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47 10.37-13.27 19.55-26.6 27.53-39.73C338 316.53 381 258 381 200 381 106.4 316.32 32 224 32S67 106.4 67 200c0 58 43 116.53 110.66 156.12 8 13.13 17.16 26.46 27.53 39.73-35.63 39.59-77.24 68.78-119.3 50.47-41.1-17.88-65.89-63.1-65.89-130.34C20 186.29 104.91 0 224 0s204 186.29 204 315.98c0 67.24-24.79 112.46-65.85 130.37zM355.08 464c-35.67-15.54-72.33-47.5-106.56-90.15C232.85 393.38 228.66 395 224 395c-4.66 0-8.85-1.62-14.52-21.15-34.23 42.65-70.89 74.61-106.56 90.15-40.35 17.58-86.08 6.55-102.92-32.18-16.84-38.74-2.12-88.75 38.23-106.33C81.33 306.9 110 263.38 110 200c0-62.9 51.1-114 114-114s114 51.1 114 114c0 63.38 28.67 106.9 71.77 125.49 40.35 17.58 55.07 67.59 38.23 106.33-16.84 38.73-62.57 49.76-102.92 32.18z"/></svg>
+                            </span>
+                        </div>
+                        <div class="review-stars text-gold">★★★★★</div>
+                        <p class="review-text">“A beautiful stay with thoughtful touches throughout. The team made the whole experience feel personal and calm.”</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">OH</div>
+                            <div class="review-meta">
+                                <strong>Olivia H.</strong>
+                                <span>Business booking</span>
+                            </div>
+                            <span class="review-source-badge airbnb-badge" aria-label="Airbnb review">
+                                <svg viewBox="0 0 448 512" width="16" height="16"><path fill="#FF5A5F" d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18-22.55-88 112.61-88 90.06 0-5.45 24.25-20.29 52-45.06 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47 10.37-13.27 19.55-26.6 27.53-39.73C338 316.53 381 258 381 200 381 106.4 316.32 32 224 32S67 106.4 67 200c0 58 43 116.53 110.66 156.12 8 13.13 17.16 26.46 27.53 39.73-35.63 39.59-77.24 68.78-119.3 50.47-41.1-17.88-65.89-63.1-65.89-130.34C20 186.29 104.91 0 224 0s204 186.29 204 315.98c0 67.24-24.79 112.46-65.85 130.37zM355.08 464c-35.67-15.54-72.33-47.5-106.56-90.15C232.85 393.38 228.66 395 224 395c-4.66 0-8.85-1.62-14.52-21.15-34.23 42.65-70.89 74.61-106.56 90.15-40.35 17.58-86.08 6.55-102.92-32.18-16.84-38.74-2.12-88.75 38.23-106.33C81.33 306.9 110 263.38 110 200c0-62.9 51.1-114 114-114s114 51.1 114 114c0 63.38 28.67 106.9 71.77 125.49 40.35 17.58 55.07 67.59 38.23 106.33-16.84 38.73-62.57 49.76-102.92 32.18z"/></svg>
+                            </span>
+                        </div>
+                        <div class="review-stars text-gold">★★★★★</div>
+                        <p class="review-text">“The booking process was smooth and the property was exactly what our team needed. Highly recommended.”</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">CT</div>
+                            <div class="review-meta">
+                                <strong>Claire T.</strong>
+                                <span>Leisure stay</span>
+                            </div>
+                            <span class="review-source-badge airbnb-badge" aria-label="Airbnb review">
+                                <svg viewBox="0 0 448 512" width="16" height="16"><path fill="#FF5A5F" d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18-22.55-88 112.61-88 90.06 0-5.45 24.25-20.29 52-45.06 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47 10.37-13.27 19.55-26.6 27.53-39.73C338 316.53 381 258 381 200 381 106.4 316.32 32 224 32S67 106.4 67 200c0 58 43 116.53 110.66 156.12 8 13.13 17.16 26.46 27.53 39.73-35.63 39.59-77.24 68.78-119.3 50.47-41.1-17.88-65.89-63.1-65.89-130.34C20 186.29 104.91 0 224 0s204 186.29 204 315.98c0 67.24-24.79 112.46-65.85 130.37zM355.08 464c-35.67-15.54-72.33-47.5-106.56-90.15C232.85 393.38 228.66 395 224 395c-4.66 0-8.85-1.62-14.52-21.15-34.23 42.65-70.89 74.61-106.56 90.15-40.35 17.58-86.08 6.55-102.92-32.18-16.84-38.74-2.12-88.75 38.23-106.33C81.33 306.9 110 263.38 110 200c0-62.9 51.1-114 114-114s114 51.1 114 114c0 63.38 28.67 106.9 71.77 125.49 40.35 17.58 55.07 67.59 38.23 106.33-16.84 38.73-62.57 49.76-102.92 32.18z"/></svg>
+                            </span>
+                        </div>
+                        <div class="review-stars text-gold">★★★★★</div>
+                        <p class="review-text">“Stylish, peaceful, and beautifully managed. We felt looked after before we even arrived.”</p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">SM</div>
+                            <div class="review-meta">
+                                <strong>Sarah M.</strong>
+                                <span>Corporate stay guest</span>
+                            </div>
+                            <span class="review-source-badge airbnb-badge" aria-label="Airbnb review">
+                                <svg viewBox="0 0 448 512" width="16" height="16"><path fill="#FF5A5F" d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18-22.55-88 112.61-88 90.06 0-5.45 24.25-20.29 52-45.06 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47 10.37-13.27 19.55-26.6 27.53-39.73C338 316.53 381 258 381 200 381 106.4 316.32 32 224 32S67 106.4 67 200c0 58 43 116.53 110.66 156.12 8 13.13 17.16 26.46 27.53 39.73-35.63 39.59-77.24 68.78-119.3 50.47-41.1-17.88-65.89-63.1-65.89-130.34C20 186.29 104.91 0 224 0s204 186.29 204 315.98c0 67.24-24.79 112.46-65.85 130.37zM355.08 464c-35.67-15.54-72.33-47.5-106.56-90.15C232.85 393.38 228.66 395 224 395c-4.66 0-8.85-1.62-14.52-21.15-34.23 42.65-70.89 74.61-106.56 90.15-40.35 17.58-86.08 6.55-102.92-32.18-16.84-38.74-2.12-88.75 38.23-106.33C81.33 306.9 110 263.38 110 200c0-62.9 51.1-114 114-114s114 51.1 114 114c0 63.38 28.67 106.9 71.77 125.49 40.35 17.58 55.07 67.59 38.23 106.33-16.84 38.73-62.57 49.76-102.92 32.18z"/></svg>
+                            </span>
+                        </div>
+                        <div class="review-stars text-gold">★★★★★</div>
+                        <p class="review-text">“The accommodation was spotless, comfortable, and perfectly arranged for our team. Everything felt effortless.”</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">JR</div>
+                            <div class="review-meta">
+                                <strong>James R.</strong>
+                                <span>Workforce relocation</span>
+                            </div>
+                            <span class="review-source-badge airbnb-badge" aria-label="Airbnb review">
+                                <svg viewBox="0 0 448 512" width="16" height="16"><path fill="#FF5A5F" d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18-22.55-88 112.61-88 90.06 0-5.45 24.25-20.29 52-45.06 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47 10.37-13.27 19.55-26.6 27.53-39.73C338 316.53 381 258 381 200 381 106.4 316.32 32 224 32S67 106.4 67 200c0 58 43 116.53 110.66 156.12 8 13.13 17.16 26.46 27.53 39.73-35.63 39.59-77.24 68.78-119.3 50.47-41.1-17.88-65.89-63.1-65.89-130.34C20 186.29 104.91 0 224 0s204 186.29 204 315.98c0 67.24-24.79 112.46-65.85 130.37zM355.08 464c-35.67-15.54-72.33-47.5-106.56-90.15C232.85 393.38 228.66 395 224 395c-4.66 0-8.85-1.62-14.52-21.15-34.23 42.65-70.89 74.61-106.56 90.15-40.35 17.58-86.08 6.55-102.92-32.18-16.84-38.74-2.12-88.75 38.23-106.33C81.33 306.9 110 263.38 110 200c0-62.9 51.1-114 114-114s114 51.1 114 114c0 63.38 28.67 106.9 71.77 125.49 40.35 17.58 55.07 67.59 38.23 106.33-16.84 38.73-62.57 49.76-102.92 32.18z"/></svg>
+                            </span>
+                        </div>
+                        <div class="review-stars text-gold">★★★★★</div>
+                        <p class="review-text">“Reliable, professional, and easy to work with. Holt Accommodation made our project stay simple from start to finish.”</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">EL</div>
+                            <div class="review-meta">
+                                <strong>Emma L.</strong>
+                                <span>Luxury retreat guest</span>
+                            </div>
+                            <span class="review-source-badge airbnb-badge" aria-label="Airbnb review">
+                                <svg viewBox="0 0 448 512" width="16" height="16"><path fill="#FF5A5F" d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18-22.55-88 112.61-88 90.06 0-5.45 24.25-20.29 52-45.06 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47 10.37-13.27 19.55-26.6 27.53-39.73C338 316.53 381 258 381 200 381 106.4 316.32 32 224 32S67 106.4 67 200c0 58 43 116.53 110.66 156.12 8 13.13 17.16 26.46 27.53 39.73-35.63 39.59-77.24 68.78-119.3 50.47-41.1-17.88-65.89-63.1-65.89-130.34C20 186.29 104.91 0 224 0s204 186.29 204 315.98c0 67.24-24.79 112.46-65.85 130.37zM355.08 464c-35.67-15.54-72.33-47.5-106.56-90.15C232.85 393.38 228.66 395 224 395c-4.66 0-8.85-1.62-14.52-21.15-34.23 42.65-70.89 74.61-106.56 90.15-40.35 17.58-86.08 6.55-102.92-32.18-16.84-38.74-2.12-88.75 38.23-106.33C81.33 306.9 110 263.38 110 200c0-62.9 51.1-114 114-114s114 51.1 114 114c0 63.38 28.67 106.9 71.77 125.49 40.35 17.58 55.07 67.59 38.23 106.33-16.84 38.73-62.57 49.76-102.92 32.18z"/></svg>
+                            </span>
+                        </div>
+                        <div class="review-stars text-gold">★★★★★</div>
+                        <p class="review-text">“A beautiful stay with thoughtful touches throughout. The team made the whole experience feel personal and calm.”</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">OH</div>
+                            <div class="review-meta">
+                                <strong>Olivia H.</strong>
+                                <span>Business booking</span>
+                            </div>
+                            <span class="review-source-badge airbnb-badge" aria-label="Airbnb review">
+                                <svg viewBox="0 0 448 512" width="16" height="16"><path fill="#FF5A5F" d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18-22.55-88 112.61-88 90.06 0-5.45 24.25-20.29 52-45.06 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47 10.37-13.27 19.55-26.6 27.53-39.73C338 316.53 381 258 381 200 381 106.4 316.32 32 224 32S67 106.4 67 200c0 58 43 116.53 110.66 156.12 8 13.13 17.16 26.46 27.53 39.73-35.63 39.59-77.24 68.78-119.3 50.47-41.1-17.88-65.89-63.1-65.89-130.34C20 186.29 104.91 0 224 0s204 186.29 204 315.98c0 67.24-24.79 112.46-65.85 130.37zM355.08 464c-35.67-15.54-72.33-47.5-106.56-90.15C232.85 393.38 228.66 395 224 395c-4.66 0-8.85-1.62-14.52-21.15-34.23 42.65-70.89 74.61-106.56 90.15-40.35 17.58-86.08 6.55-102.92-32.18-16.84-38.74-2.12-88.75 38.23-106.33C81.33 306.9 110 263.38 110 200c0-62.9 51.1-114 114-114s114 51.1 114 114c0 63.38 28.67 106.9 71.77 125.49 40.35 17.58 55.07 67.59 38.23 106.33-16.84 38.73-62.57 49.76-102.92 32.18z"/></svg>
+                            </span>
+                        </div>
+                        <div class="review-stars text-gold">★★★★★</div>
+                        <p class="review-text">“The booking process was smooth and the property was exactly what our team needed. Highly recommended.”</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">CT</div>
+                            <div class="review-meta">
+                                <strong>Claire T.</strong>
+                                <span>Leisure stay</span>
+                            </div>
+                            <span class="review-source-badge airbnb-badge" aria-label="Airbnb review">
+                                <svg viewBox="0 0 448 512" width="16" height="16"><path fill="#FF5A5F" d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18-22.55-88 112.61-88 90.06 0-5.45 24.25-20.29 52-45.06 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47 10.37-13.27 19.55-26.6 27.53-39.73C338 316.53 381 258 381 200 381 106.4 316.32 32 224 32S67 106.4 67 200c0 58 43 116.53 110.66 156.12 8 13.13 17.16 26.46 27.53 39.73-35.63 39.59-77.24 68.78-119.3 50.47-41.1-17.88-65.89-63.1-65.89-130.34C20 186.29 104.91 0 224 0s204 186.29 204 315.98c0 67.24-24.79 112.46-65.85 130.37zM355.08 464c-35.67-15.54-72.33-47.5-106.56-90.15C232.85 393.38 228.66 395 224 395c-4.66 0-8.85-1.62-14.52-21.15-34.23 42.65-70.89 74.61-106.56 90.15-40.35 17.58-86.08 6.55-102.92-32.18-16.84-38.74-2.12-88.75 38.23-106.33C81.33 306.9 110 263.38 110 200c0-62.9 51.1-114 114-114s114 51.1 114 114c0 63.38 28.67 106.9 71.77 125.49 40.35 17.58 55.07 67.59 38.23 106.33-16.84 38.73-62.57 49.76-102.92 32.18z"/></svg>
+                            </span>
+                        </div>
+                        <div class="review-stars text-gold">★★★★★</div>
+                        <p class="review-text">“Stylish, peaceful, and beautifully managed. We felt looked after before we even arrived.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team section-padding bg-cream">
+            <div class="container team-container">
+                <div class="team-img-wrapper fade-in">
+                    <img src="assets/images/team.png" alt="Holt Accommodation Female Team" class="rounded-image shadow-sm">
+                </div>
+                
+                <div class="team-content fade-in">
+                    <span class="label text-terracotta">Meet The Team</span>
+                    <h2 class="section-title text-dark">Personal. Hands on. All female.</h2>
+                    <p class="body-text mb-6">We’re a small, dedicated team that genuinely cares. From the first enquiry to the final check out, we’re here to make every stay exceptional, offering hands-on service and personal support.</p>
+                    
+                    <a href="#team" class="btn btn-terracotta mb-8">Meet The Team</a>
+
+                    <div class="values-grid fade-in">
+                        <div class="value-item">
+                            <div class="value-icon"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+                            <h4 class="value-title">Personal Service</h4>
+                            <p class="value-desc">We know our guests and their needs.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
+                            <h4 class="value-title">Hands On Support</h4>
+                            <p class="value-desc">We manage every detail, start to finish.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></div>
+                            <h4 class="value-title">Trust & Care</h4>
+                            <p class="value-desc">Your comfort is our priority.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
+                            <h4 class="value-title">All Female Team</h4>
+                            <p class="value-desc">A passion for hospitality, driven by women.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer bg-olive text-white fade-in">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/logo.png" alt="Holt Accommodation Logo" class="footer-logo">
+                    <p class="footer-desc">Curated stays for teams and travellers. Workstays, relocations and luxury retreats, managed with care.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg></a>
+                        <a href="#" aria-label="Email"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#workstays">Workstays</a></li>
+                        <li><a href="#retreats">Leisure Stays</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Meet The Team</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>+44 (0) 123 567 890</li>
+                        <li>hello@holtaccommodation.co.uk</li>
+                        <li>Dorset, England</li>
+                        <li>Mon to Fri, 9am to 5pm</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" id="enquire">
+                    <h4 class="footer-heading">Enquire Now</h4>
+                    <p class="footer-text">Let us create the perfect stay for your team or your getaway.</p>
+                    <a href="#" class="btn btn-terracotta btn-full footer-enquire-btn">Send An Enquiry</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Holt Accommodation. All rights reserved.</p>
+                <p class="footer-legal">
+                    <a href="#">Privacy Policy</a> | 
+                    <a href="#">Terms & Conditions</a> | 
+                    <a href="#">Cookies</a>
+                </p>
+                <p>Website by Studio North</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
